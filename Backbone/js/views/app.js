@@ -80,7 +80,6 @@ app.AppView = Backbone.View.extend({
 	// by creating a view for it, and
 	// appending its element to the '<ul>'
 	addOne: function(todo){
-		console.log('addOne');
 		var view = new app.TodoView({model: todo});
 		$('#todo-list').append( view.render().el );	
 	},
